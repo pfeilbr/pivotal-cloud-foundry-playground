@@ -17,7 +17,7 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
 * supports [Deploy an App with Docker](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html)
 
 
-### Session
+### `cf` cli session
 
 ```sh
 cf help
