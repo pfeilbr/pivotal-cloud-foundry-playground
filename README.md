@@ -8,6 +8,8 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
 * [Cloud Foundry Documentation](https://docs.cloudfoundry.org/)
 * [Why Yes, Cloud Foundry IS Like Your Own Heroku!](https://www.cloudfoundry.org/blog/yes-cloud-foundry-like-heroku/)
 
+---
+
 ### Notes
 
 * [stacks](https://docs.cloudfoundry.org/devguide/deploy-apps/stacks.html) is a prebuilt root file system (rootfs) that supports a specific operating system
@@ -15,7 +17,12 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
     > e.g. cflinuxfs3: The Linux cflinuxfs3 stack is derived from Ubuntu Bionic 18.04.
 * uses [buildpacks](https://docs.cloudfoundry.org/buildpacks/understand-buildpacks.html) to support different languages/run-times (based on heroku buildpack scheme). buildpacks are layered on top of stacks
 * supports [Deploy an App with Docker](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html)
+* [Restaging](https://docs.cloudfoundry.org/devguide/deploy-apps/start-restart-restage.html#restage-your-app) your app stops your app and restages it, by compiling a new droplet and starting it.
+* [Task](https://docs.cloudfoundry.org/devguide/using-tasks.html): A task is an app or script whose code is included as part of a deployed app, but runs independently in its own container.
 
+
+
+---
 
 ### `cf` cli session
 
@@ -64,6 +71,18 @@ cf app spring-music
 # show app ENV
 cf env spring-music
 
+# run a task (simple `ls`)
+cf run-task spring-music "ls" --name my-task
+
+# view task output
+cf logs spring-music --recent
+
+# list tasks for an app (running, failed, succeeded)
+cf tasks spring-music
+
+# cancel a task
+cf terminate-task spring-music TASK-ID
+
 # stop app
 cf stop spring-music
 
@@ -73,6 +92,8 @@ cf routes
 # stop environment (VMs, etc.)
 cf dev stop
 ```
+
+---
 
 ### Screenshots
 
