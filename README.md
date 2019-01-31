@@ -10,7 +10,12 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
 
 ### Notes
 
-* uses [buildpacks](https://docs.cloudfoundry.org/buildpacks/understand-buildpacks.html) to support different languages/run-times (based on heroku buildpack scheme)
+* [stacks](https://docs.cloudfoundry.org/devguide/deploy-apps/stacks.html) is a prebuilt root file system (rootfs) that supports a specific operating system
+(https://docs.cloudfoundry.org/devguide/deploy-apps/stacks.html)
+    > e.g. cflinuxfs3: The Linux cflinuxfs3 stack is derived from Ubuntu Bionic 18.04.
+* uses [buildpacks](https://docs.cloudfoundry.org/buildpacks/understand-buildpacks.html) to support different languages/run-times (based on heroku buildpack scheme). buildpacks are layered on top of stacks
+* supports [Deploy an App with Docker](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html)
+
 
 ### Session
 
