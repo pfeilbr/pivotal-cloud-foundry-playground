@@ -5,6 +5,12 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
 ### Resources
 
 * [PCF on your Local Workstation with PCF Dev](https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry-dev/introduction) tutorial
+* [Cloud Foundry Documentation](https://docs.cloudfoundry.org/)
+* [Why Yes, Cloud Foundry IS Like Your Own Heroku!](https://www.cloudfoundry.org/blog/yes-cloud-foundry-like-heroku/)
+
+### Notes
+
+* uses [buildpacks](https://docs.cloudfoundry.org/buildpacks/understand-buildpacks.html) to support different languages/run-times (based on heroku buildpack scheme)
 
 ### Session
 
