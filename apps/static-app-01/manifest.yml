@@ -1,0 +1,9 @@
+---
+applications:
+- name: static-app-01
+  memory: 64M
+  instances: 1
+  buildpack: staticfile_buildpack
+  routes:
+  - route: static-app-01.cfapps.io
+  - route: static-app-01.minote.net
