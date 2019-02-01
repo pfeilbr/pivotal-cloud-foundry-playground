@@ -1,0 +1,10 @@
+---
+applications:
+- name: docker-nodejs-app-01
+  memory: 64M
+  instances: 1
+  docker:
+    image: pfeilbr/docker-nodejs-app01:latest
+  routes:
+  - route: docker-nodejs-app-01.cfapps.io
+  - route: docker-nodejs-app-01.minote.net

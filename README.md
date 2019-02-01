@@ -10,6 +10,12 @@ learn [Pivotal Cloud Foundry](https://pivotal.io/platform)
 
 ---
 
+### Example Apps
+
+see `README.md` in subdirectories of [apps/](apps)
+
+---
+
 ### Notes
 
 * [stacks](https://docs.cloudfoundry.org/devguide/deploy-apps/stacks.html) is a prebuilt root file system (rootfs) that supports a specific operating system
